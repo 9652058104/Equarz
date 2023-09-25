@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.base.Testbase;
-import com.hospiol.pageobjects.Homepage;
+
 
 public class Login_Functionality extends Testbase {
 	@FindBy(id="si-email")
@@ -23,17 +23,16 @@ public class Login_Functionality extends Testbase {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public Homepage Verifylogin() throws Throwable 
+	public homepage Verifylogin() throws Throwable 
 	{
 		user.sendKeys(props.getProperty("username"));
 		pass.sendKeys(props.getProperty("password"));
 		Thread.sleep(15000);
 		signin.click();
 		
-		return new Homepage();
+		return new homepage () ;
+	
+
+	
 	}
-
-	
-
-	
 }

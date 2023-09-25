@@ -6,7 +6,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.base.Testbase;
-import com.hospiol.pageobjects.Homepage;
 
 public class Registration_Functionality extends Testbase{
 //	public String first="";
@@ -44,7 +43,7 @@ public class Registration_Functionality extends Testbase{
 		PageFactory.initElements(driver, this);
 	}
 	
-	public Homepage Regdetails(String first,String last,String emailid,
+	public homepage Regdetails(String first,String last,String emailid,
 			String Phonenum,String Password1,String Confirmpassword) throws Throwable 
 	{
 		//System.out.println(first+last+emailid+Phonenum+Password1+Confirmpassword);
@@ -58,7 +57,7 @@ public class Registration_Functionality extends Testbase{
 		//Thread.sleep(15000);
 		signup.click();
 		
-		return new Homepage();
+		return new homepage();
 	}
 	
 	
