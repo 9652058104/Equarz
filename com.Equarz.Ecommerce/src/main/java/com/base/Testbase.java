@@ -18,7 +18,7 @@ public class Testbase {
 	FileInputStream file;
 	public static Properties props;
 	public static WebDriver driver;
-	public WebDriverWait wait;
+	
 	
 
 	public Testbase() {
